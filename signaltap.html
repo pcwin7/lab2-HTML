@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>5.Signal Tapによる波形観測 | Quartus Primeオンラインマニュアル</title>
+    <link rel="stylesheet" href="pages.css">
+  </head>
+
+  <body>
+    <h1>Quartus Prime オンラインマニュアル</h1>
+    <hr>
+
+    <h2>5.Signal Tapによる波形観測</h2>
+    <p>〜項目名をクリックで展開〜</p>
+
+    <!-- 1.呼び出し、信号選択 -->
+    <div onclick="obj=document.getElementById('menu1').style; obj.display=(obj.display=='none')?'block':'none';">
+      <a><h3>5.1.Signal Tapの呼び出し，観測信号の選択</h3></a>  
+    </div>
+         
+    <div id="menu1" style="display:none;clear:both;">
+      <p>ToolsメニューからSignal Tap Logic Analyzerを起動する。</p>
+      <p>次に、画面中央でダブルクリックをして観測する信号を選択、Insertする。</p>
+      <p><img src="image8.png"></p>
+    </div>
+    <!--// 1.おわり -->
+  
+    <!-- 2.トリガ設定 -->
+    <div onclick="obj=document.getElementById('menu2').style; obj.display=(obj.display=='none')?'block':'none';">
+      <a><h3>5.2.トリガ信号・トリガ条件の設定</h3></a>
+    </div>
+       
+    <div id="menu2" style="display:none;clear:both;">
+      <p>Trigger Conditions列の設定したい信号で右クリックをしてトリガ信号を設定する（画面ではRising Edge）。また、トリガを無効にする場合はTrigger Enable列のチェックを外す。</p>
+      <p><img src="image9.png"></p>        
+    </div>
+    <!--// 2.おわり -->
+    
+    <!-- 3.Clock,depth設定 -->
+    <div onclick="obj=document.getElementById('menu3').style; obj.display=(obj.display=='none')?'block':'none';">
+      <a><h3>5.3.Sampling Clock・Sample depthの設定</h3></a>
+    </div>
+   
+    <div id="menu3" style="display:none;clear:both;">
+      <p>画面右側の Signal Configuration 内で設定を行う。今回は以下の通り設定を行った。</p>
+      <ul>
+        <li>Clock：clk_in</li>
+        <li>Sample depth：1K</li>
+      </ul>
+      <p><img src="image10.png"></p>
+    </div>
+    <!--// 3.おわり -->
+
+    <!-- 4.FPGA_Config -->
+    <div onclick="obj=document.getElementById('menu4').style; obj.display=(obj.display=='none')?'block':'none';">
+    <a><h3>5.4.FPGAのコンフィギュレーション</h3></a>
+    </div>
+   
+    <div id="menu4" style="display:none;clear:both;">
+      <p>画面右上部の JTAG Chain Configuration 内で設定を行う。SOF Manager の右側に.sof ファイル（この場合は Sample.sof）を指定し、書き込みボタンを押下する（本実験環境において、書き込みに失敗することが何度かあった。その場合は、書き込みボタンをもう一度押下することによって解決した）。</p>
+      <p><img src="image11.png"</p>
+    </div>
+    <!--// 4.おわり -->
+
+    <!-- 4.FPGA_Config -->
+    <div onclick="obj=document.getElementById('menu5').style; obj.display=(obj.display=='none')?'block':'none';">
+      <a><h3>5.5.波形の観測</h3></a>
+    </div>
+   
+    <div id="menu5" style="display:none;clear:both;">
+      <p>画面上部中央のInstance Manager横の虫眼鏡マークのボタンを押下して波形の観測を開始する。</p>
+    </div>
+    <!--// 4.おわり -->
+
+    <div> <a href="index.html" title="目次">＜目次＞</a></div>
+  </body>
+</html>
+
+
+
